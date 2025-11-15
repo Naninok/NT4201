@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>NT4201 Dosing — Range + Examples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="card">
+    <a class="back-link" href="https://naninok.github.io/Main-Page/">← กลับไปหน้าแรก</a>
+    <h1 class="title">NT4201 — Dosing Calculator (Range view)</h1>
+
+    <label>ค่าปัจจุบัน (Nitrite, ppm)</label>
+    <input id="ppm_now" type="number" step="any" placeholder="เช่น 5">
+
+    <label>ค่าที่ต้องการ (Nitrite, ppm)</label>
+    <input id="ppm_target" type="number" step="any" placeholder="เช่น 20">
+
+    <label>Working Volume (m³)</label>
+    <input id="volume" type="number" step="any" placeholder="เช่น 200">
+
+    <div id="main_result" class="main-result">-</div>
+
+    <div id="range_block" class="range-block">
+      <!-- จะเติมข้อมูล range และตัวอย่างตรงนี้ -->
+    </div>
+
+    <div id="detail" class="detail"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
